@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 884.5)), 
+                url('FC\ Bayern\ München\ Stadion\ innen.jpg');    
+    background-size: cover;
+    padding: 100px;
+}
+
+
+.item {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(238, 0, 0, 0.103);
+    display: flex;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 40px black;
+    overflow-y: scroll;
+    height: 600px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: white;
+    margin-top: 10px;
+    font-family: "Nunito", sans-serif;
+}
+
+.img {
+    width: 300px;
+    position: absolute;
+}
+
+.text {
+    margin: 10px 10px 10px 360px;
+}
+
+.text1 {
+    margin: 10px 380px 0px 0;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    color: white;
+    padding-bottom: 5px;
+}
+
+hr {
+    margin-bottom: 5px;
+}
