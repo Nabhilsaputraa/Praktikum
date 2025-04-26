@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport News | Home</title>
+    <!-- framework -->
+    <link rel="icon" href="img/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Latihan Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkblue;" id="navigasi">
+        <div class="container">
+          <a class="navbar-brand text-light" href="#">Sport News</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Article</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Gallery</a>
+              </li>
+              <li>
+                <button class="mode light-btn" id="light" onclick="Lightmode"><img src="img/light_mode_24dp_FFFF55_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+              </li>
+              <li>
+                <button class="mode dark-btn" id="dark"><img src="img/dark_mode_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Latihan HERO -->
+      <section class="d-flex align-items-center text-sm-start bg-info-subtie" style="height: 93vh;" id="page">
+        <div class="container">
+          <div class="d-sm-flex flex-sm-row-reverse align-items-center">
+            <!-- Gambar -->
+            <img src="img/flower.png" alt="Polaroid Journal" class="img-fluid" width="300">
+            <!-- Teks -->
+            <div>
+              <h1 class="fw-bold display-4">Sport News</h1>
+              <h4 class="lead display-6" style="margin-right: 40px;">Baca Berita Terbaru tentang olahraga hanya disini</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+          
+      <!-- Latihan Article -->
+      <section class="py-5">
+        <div class="container">
+          <h1 class="text-center fw-bold mb-5" id="title">Article</h1>
+          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+            <!-- Card 1 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/Anceloti.webp" class="card-img-top" alt="Perpustakaan Kampus">
+                <div class="card-body">
+                  <h5 class="card-title">Emirates Adidas Ancelotti: "It's very tough, but stranger things have happened at the Bernabéu"</h5>
+                  <p class="card-text">"We'll try any way we can, let's see if we can pull it off," added the coach. <a href="https://www.realmadrid.com/en-US/news/football/first-team/press-conference/ancelotti-post-arsenal-real-madrid-08-04-2025">More</a></p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="col" >
+              <div class="card h-100">
+                <img src="img/Asencio.webp" class="card-img-top" alt="Ruang Kelas">
+                <div class="card-body">
+                  <h5 class="card-title">Courtois: "We're strong at home and people need to have faith in this team"</h5>
+                  <p class="card-text">"In the first half we broke their press well and had possession of the ball but what we wanted to do in the second half didn't come off," said the goalkeeper. <a href="https://www.realmadrid.com/en-US/news/football/first-team/latest-news/courtois-08-04-2025">More</a></p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/Courtois.webp" class="card-img-top" alt="Kelompok Belajar">
+                <div class="card-body">
+                  <h5 class="card-title">Modrić moves level with Benzema in second on Madrid's all-time European Cup appearances list</h5>
+                  <p class="card-text">The clash against Arsenal was Luka Modrić's 133rd appearance for Real Madrid in the European Cup. <a href="https://www.realmadrid.com/en-US/news/football/first-team/latest-news/modric-segundo-partidos-ucl-08-04-2025">More</a></p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                  <img src="img/Lucas Vazquez.webp" class="card-img-top" alt="Ruang Kelas">
+                  <div class="card-body">
+                    <h5 class="card-title">Lucas Vázquez: "If any team in the world can turn this around, it's Real Madrid"</h5>
+                    <p class="card-text">"We weren't able to keep possession for long periods and peg them back in their half; that's what made the difference," said the defender. <a href="https://www.realmadrid.com/en-US/news/football/first-team/latest-news/declaraciones-08-04-2025">More</a></p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                  <img src="img/Modric.webp" class="card-img-top" alt="Ruang Kelas">
+                  <div class="card-body">
+                    <h5 class="card-title">Asencio: “We need to give it 100% at the Bernabéu"</h5>
+                    <p class="card-text">“We're absolutely convinced we can turn it around," underlined the academy graduate. <a href="https://www.realmadrid.com/en-US/news/football/first-team/latest-news/asencio-08-04-2025">Here</a></p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+      
+
+    <!-- Latihan Galery -->
+    <section style="width: 100%;" id="Galery">
+        <div class="container">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/artem.png" class="d-block w-100 img-fluid" alt="..." style="max-height: 800px; object-fit: contain;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/dybala.png" class="d-block w-100 img-fluid" alt="..." style="max-height: 800px; object-fit: contain;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Matias.png" class="d-block w-100 img-fluid" alt="..." style="max-height: 800px; object-fit: contain;">
+                    </div>
+                </div>
+
+        <button class="carousel-control-prev bg-info-subtie" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+        </div>
+    </section>
+
+
+    <!-- Latihan Footer -->
+    <footer class="py-4" id="footer" style="background-color: darkblue; color: white;">
+        <div class="container text-center">
+          <div class="mb-3">
+            <a href="https://www.instagram.com/gilangnabhil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="h2 p-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="h2 p-2 "><i class="fab fa-twitter"></i></a>
+            <a href="#" class="h2 p-2 "><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div>
+            <p class="mb-0"> Gilang Nabhil &copy; 2025</p>
+          </div>
+        </div>
+    </footer>
+
+
+
+<!-- framework -->
+ <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

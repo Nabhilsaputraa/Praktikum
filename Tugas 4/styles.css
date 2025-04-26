@@ -1,0 +1,16 @@
+.mode {
+    border: none;
+    padding: 5px;
+    margin-top: 2px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.dark-btn {
+    background-color: black;
+}
+
+.dark-mode {
+    background-color: rgb(29, 29, 29);
+}
+
