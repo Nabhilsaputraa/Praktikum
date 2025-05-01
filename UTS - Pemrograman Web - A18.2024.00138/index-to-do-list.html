@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Framework - Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Emblema+One&family=Lilita+One&family=Oswald:wght@200..700&family=Rubik+Mono+One&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <nav class="navbar navbar-expand-lg " style="background-color: darkblue" id="nav">
+    <div class="container">
+      <a class="navbar-brand text-light" href="index.html">Sport News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html#page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html#title">Article</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#"></a>
+          </li>
+          <li>
+            <button class="mode light-btn" id="light"><img src="img/light_mode_24dp_FFFF55_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+          </li>
+          <li>
+            <button class="mode dark-btn" id="dark"><img src="img/dark_mode_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- To Do List -->
+  <section class="container-fluid vh-93 py-0" id="con-to-do-list" style="margin-top: 0px;">
+    <div class="container-fluid py-3 px-2 d-flex gap-2 align-items-start">
+    <!-- Deskripsi Box -->
+      <div class="col-md-3 rounded-3 mt-3 shadow-lg bg-white" id="deskripsi" style="height: 100%; overflow-y: auto;">
+        <div class="w-100 py-3 border-bottom rounded-top-3 d-flex justify-content-center">
+        <p class="fw-bold my-auto">DESKRIPSI</p>
+        </div>
+        <div class="p-3">
+        <p>Program ini berfungsi sebagai <strong>To-Do List Jadwal Kegiatan</strong> yang memudahkan pengguna untuk:</p>
+        <ul>
+          <li>Menambahkan nama kegiatan beserta tanggal pelaksanaannya.</li>
+          <li>Melihat daftar kegiatan yang sudah dibuat dalam tabel.</li>
+          <li>Menandai kegiatan yang sudah selesai.</li>
+          <li>Mengedit atau menghapus kegiatan sesuai kebutuhan.</li>
+        </ul>
+        </div>
+      </div>
+      
+    <!-- Box Table dan Input To do List -->
+      <div class="col-md-9 rounded-3 p-3 mt-3 shadow-lg bg-white">
+      <form class="d-flex align-items-end gap-3 my-3" id="jadwalForm">
+        <div>
+          <p class=" fw-bold">Nama Kegiatan</p>
+          <input type="text" class="form-control rounded-pill px-3 py-2" id="namaKegiatan" placeholder="Masukan Nama Kegiatan">
+        </div>
+        <div>
+          <p class=" fw-bold">Tanggal Kegiatan</p>
+          <input type="date" class="form-control rounded-pill px-3 py-2" id="tanggalKegiatan">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary rounded-pill px-3 py-2">Masukan</button>
+        </div>
+      </form>
+      <table class="table table-bordered" id="table">
+        <thead class="table-light">
+          <tr class="text-center">
+            <th style="width: 20px;">No</th>
+            <th>Nama Kegiatan</th>
+            <th>Tanggal</th>
+            <th style="width: 100px;">selesai</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleTableBody">
+        </tbody>
+      </table>
+     </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script/script-to-do-list.js"></script>
+
+</body>
+</html>
